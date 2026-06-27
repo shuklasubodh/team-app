@@ -4,17 +4,20 @@ import Dashboard from "./components/dashboard";
 import Settings from "./components/settings";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <>
+      <div className="navigation">
+        <NavBar />
+      </div>
       <Welcome />
       <Profile />
       <Dashboard />
       <Settings />
-      <NavBar />
       <Home />
-    </div>
+    </>
   );
 }
 
